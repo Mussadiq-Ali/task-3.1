@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.admission-info {
+    text-align: center;
+    padding: 20px;
+}
+
+.move-text {
+    position: relative;
+    left: 10px;
+}
+
+.admission-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.admission-card {
+    width: 30%;
+    height: 200px;
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid #333;
+    background-color: white;
+    position: relative;
+}
+
+.apply-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+}
+
+.apply-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .admission-cards {
+        flex-direction: column;
+    }
+
+    .admission-card {
+        width: 100%;
+    }
+}
